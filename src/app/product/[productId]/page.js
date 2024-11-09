@@ -1,21 +1,12 @@
-import ProductScreen from '../../../screens/Product/ProductScreen';
 
-// Define the dynamic routes to pre-render
-export async function generateStaticParams() {
-
-  const productIds = await fetchProductIds();
-
-  return productIds.map((id) => ({
-    productId: id.toString(), 
-  }));
-}
+import ProductScreen from '../../../screens/Product/ProductScreen'
 
 const ProductPage = ({ params }) => {
   const { productId } = params;
 
   return (
-    <ProductScreen productId={productId} />
-  );
+    <ProductScreen producId={productId} />
+  )
 };
 
 export default ProductPage;
