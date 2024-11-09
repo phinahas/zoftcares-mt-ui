@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental:{appDir: true}
-}
+    experimental: { appDir: true },
+    output: 'standalone', // Enables server-rendering mode
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
