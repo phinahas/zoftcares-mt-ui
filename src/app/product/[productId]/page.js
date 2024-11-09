@@ -1,12 +1,10 @@
 
-import ProductScreen from '../../../screens/Product/ProductScreen'
+import ProductScreen from '../../../screens/Product/ProductScreen';
 
 const ProductPage = ({ params }) => {
-  const { productId } = params;
+  const { productId } = params;  
 
-  return (
-    <ProductScreen producId={productId} />
-  )
+  return <ProductScreen productId={productId} />; 
 };
 
 export default ProductPage;
